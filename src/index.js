@@ -1,19 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import App from './App';
-import { Provider } from 'react';
-import store from './store';
-import authSlice from './redux/authSlice';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import App from "./App";
+import { Provider } from "react";
+import store from "./store";
+// import  authSlice from "./redux/authSlice";
 
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-    <App />
+    <Provider Store={store}>
+      <App />
     </Provider>
   </React.StrictMode>
 );
